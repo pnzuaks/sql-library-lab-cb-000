@@ -38,8 +38,8 @@ def select_series_title_with_most_human_characters
 FROM series
 INNER JOIN characters
 ON series.id = characters.series_id
-GROUP BY characters.species
-HAVING characters.species = 'human';
+ORDER BY characters.species
+WHERE characters.species = 'human';
 
 "
 end
