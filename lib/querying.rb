@@ -50,6 +50,6 @@ ON characters.id = character_books.character_id
 INNER JOIN books
 ON character_books.book_id = books.id
 GROUP BY characters.name
-ORDER BY books.id DESC;
+ORDER BY COUNT(books.id) DESC;
 "
 end
