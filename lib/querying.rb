@@ -38,11 +38,12 @@ def select_series_title_with_most_human_characters
 end
 
 def select_character_names_and_number_of_books_they_are_in
-"SELECT characters.name, SUM(character_books.book_id)
+"SELECT characters.name, SUM(books.id)
 FROM characters
-LEFT OUTER JOIN character_books
-ON characters.id = character_books.character_id;
-
+INNER JOIN character_books
+ON characters.id = character_books.character_id
+INNER JOIN books
+ON character_books.book_id = books.id;
 "
 
 # "SELECT characters.name, books.id
