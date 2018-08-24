@@ -39,7 +39,7 @@ FROM series
 INNER JOIN characters
 ON series.id = characters.series_id
 HAVING characters.species = 'human'
-ORDER BY characters.species;
+GROUP BY characters.species;
 "
 end
 
