@@ -9,10 +9,10 @@ GROUP BY(books.year);
 end
 
 def select_name_and_motto_of_char_with_longest_motto
-  "
-
-  SELECT LENGTH()
-  "
+"SELECT characters.name, characters.motto
+FROM characters
+WHERE MAX(LENGTH(motto));
+"
 end
 
 
