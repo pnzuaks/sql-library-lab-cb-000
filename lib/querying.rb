@@ -46,12 +46,4 @@ INNER JOIN books
 ON character_books.book_id = books.id;
 "
 
-# "SELECT characters.name, books.id
-# FROM characters
-# INNER JOIN character_books
-# ON characters.id = character_books.character_id
-# INNER JOIN books
-# ON character_books.book_id = books.id
-# ORDER BY books.id DESC;
-# "
 end
