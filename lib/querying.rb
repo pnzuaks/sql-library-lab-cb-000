@@ -15,12 +15,10 @@ ORDER BY motto LIMIT 1;
 "
 end
 
-
 def select_value_and_count_of_most_prolific_species
 " SELECT characters.species, COUNT(characters.species)
 FROM characters
 GROUP BY characters.species HAVING COUNT(characters.species) > 3;
-
 "
 end
 
@@ -51,7 +49,6 @@ INNER JOIN character_books
 ON characters.id = character_books.character_id
 INNER JOIN books
 ON character_books.book_id = books.id
-GROUP BY characters.name, books.id;
+GROUP BY characters.name, books.id DESC;
 "
-
 end
