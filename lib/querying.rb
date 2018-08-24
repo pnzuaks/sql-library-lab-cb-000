@@ -29,7 +29,7 @@ FROM authors
 INNER JOIN series
 ON authors.id = series.author_id
 INNER JOIN subgenres
-ON series
+ON subgenres.id = 
 "
 end
 
