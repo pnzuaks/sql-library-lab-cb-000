@@ -17,7 +17,7 @@ end
 
 
 def select_value_and_count_of_most_prolific_species
-" SELECT characters.species, COUNT(characters.species)
+" SELECT characters.species, SUM(characters.species)
 FROM characters
 ORDER BY MAX(species) LIMIT 1;
 "
@@ -38,5 +38,7 @@ def select_series_title_with_most_human_characters
 end
 
 def select_character_names_and_number_of_books_they_are_in
-  "Write your SQL query here"
+"SELECT characters.name, SUM()
+
+"
 end
