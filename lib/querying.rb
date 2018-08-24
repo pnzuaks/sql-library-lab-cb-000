@@ -44,7 +44,7 @@ INNER JOIN character_books
 ON characters.id = character_books.character_id
 INNER JOIN books
 ON character_books.book_id = books.id
-ORDER BY books.id;
+ORDER BY books.id DESC;
 "
 end
 # INNER JOIN books
