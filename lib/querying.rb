@@ -43,8 +43,8 @@ FROM characters
 INNER JOIN character_books
 ON characters.id = character_books.character_id
 INNER JOIN books
-ON character_books.book_id = books.id;
-GROUP BY 
+ON character_books.book_id = books.id
+GROUP BY characters.name, books.id;
 "
 
 end
