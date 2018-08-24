@@ -49,6 +49,6 @@ INNER JOIN character_books
 ON characters.id = character_books.character_id
 INNER JOIN books
 ON character_books.book_id = books.id
-GROUP BY COUNT(books.id) DESC;
+GROUP BY COUNT(books.id) DESC ;
 "
 end
