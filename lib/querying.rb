@@ -24,7 +24,9 @@ ORDER BY MAX(species) LIMIT 1;
 end
 
 def select_name_and_series_subgenres_of_authors
-"SELECT authors.name 
+"SELECT authors.name, series.subgenre_id
+FROM authors
+INNER JOIN
 "
 end
 
