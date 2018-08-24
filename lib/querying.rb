@@ -47,5 +47,3 @@ ON character_books.book_id = books.id
 ORDER BY books.id DESC;
 "
 end
-# INNER JOIN books
-# ON character_books.book_id = books.id;
